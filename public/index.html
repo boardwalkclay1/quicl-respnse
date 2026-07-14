@@ -61,6 +61,46 @@
       40% { opacity: 0; }
       100% { opacity: 0; }
     }
+
+    /* FIXED: blocks are now transparent and smaller */
+    section {
+      background: rgba(0,0,0,0.35);
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 30px;
+      margin: 30px auto;
+      border-radius: 14px;
+      max-width: 1100px;
+      color: #f5d98c;
+    }
+
+    .hero {
+      background: rgba(0,0,0,0.25);
+      padding: 120px 20px;
+      text-align: center;
+      border-radius: 14px;
+      margin-top: 20px;
+    }
+
+    h2 {
+      color: #ffd35a;
+      text-shadow: 0 0 10px rgba(255,150,0,0.5);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: rgba(0,0,0,0.45);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.2);
+      text-align: center;
+      color: #ffd35a;
+      box-shadow: 0 0 12px rgba(255,150,0,0.4);
+    }
   </style>
 </head>
 
@@ -83,15 +123,15 @@
   <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
   <nav id="mobile-menu" class="nav hidden">
-    <a href="/services.html">Services</a>
-    <a href="/gallery.html">Gallery</a>
-    <a href="/faq.html">FAQ</a>
-    <a href="/pricing.html">Pricing</a>
-    <a href="/about.html">About</a>
-    <a href="/service-area.html">Service Area</a>
-    <a href="/reviews.html">Reviews</a>
-    <a href="/blog.html">Blog</a>
-    <a href="/contact.html">Contact</a>
+    <a href="/pages/services.html">Services</a>
+    <a href="/pages/gallery.html">Gallery</a>
+    <a href="/pages/faq.html">FAQ</a>
+    <a href="/pages/pricing.html">Pricing</a>
+    <a href="/pages/about.html">About</a>
+    <a href="/pages/service-area.html">Service Area</a>
+    <a href="/pages/reviews.html">Reviews</a>
+    <a href="/pages/blog.html">Blog</a>
+    <a href="/pages/contact.html">Contact</a>
   </nav>
 </header>
 
@@ -99,7 +139,7 @@
 <section class="hero">
   <h1 class="hero-title">Quick Response Property Services</h1>
   <p class="hero-subtitle">Fast • Reliable • Affordable</p>
-  <a href="/contact.html" class="btn">Request a Quote</a>
+  <a href="/pages/contact.html" class="btn">Request a Quote</a>
 </section>
 
 <!-- SERVICES PREVIEW -->
@@ -114,7 +154,7 @@
 </section>
 
 <!-- FLOATING CONTACT BUTTON -->
-<a href="/contact.html" class="floating-contact">Contact</a>
+<a href="/pages/contact.html" class="floating-contact">Contact</a>
 
 <!-- FOOTER -->
 <footer>
@@ -129,8 +169,8 @@
   </p>
 
   <p>
-    <a href="/privacy.html">Privacy Policy</a> •
-    <a href="/terms.html">Terms of Service</a>
+    <a href="/pages/privacy.html">Privacy Policy</a> •
+    <a href="/pages/terms.html">Terms of Service</a>
   </p>
 
   <p>© 2026 Quick Response Property Services</p>
