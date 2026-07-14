@@ -5,11 +5,9 @@
   <title>Contact Us – Quick Response Property Services</title>
 
   <link rel="icon" type="image/png" href="/img/quick-response-logo.png">
-
-  <meta property="og:title" content="Contact Quick Response Property Services">
-  <meta property="og:description" content="Request a quote for junk removal, pressure washing, or lawn care. Fast response guaranteed.">
+  <meta property="og:title" content="Contact – Quick Response Property Services">
+  <meta property="og:description" content="Request a quote for junk removal, pressure washing, or lawn care.">
   <meta property="og:image" content="/img/social-preview.jpg">
-  <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/app.js" defer></script>
@@ -19,16 +17,16 @@
 
 <header class="site-header">
   <img src="/img/quick-response-logo.png" class="logo-img">
-  <nav class="nav">
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <nav id="mobile-menu" class="nav hidden">
     <a href="/">Home</a>
     <a href="/services.html">Services</a>
-    <a href="/contact.html" class="active">Contact</a>
+    <a href="/gallery.html">Gallery</a>
   </nav>
 </header>
 
 <section class="hero">
   <h1 class="hero-title">Contact Us</h1>
-  <p class="hero-subtitle">Fast Response Guaranteed</p>
 </section>
 
 <section>
@@ -55,9 +53,12 @@
   </form>
 </section>
 
+<a href="/contact.html" class="floating-contact">Contact</a>
+
 <footer>
   <p>Call Us: <strong>(678) 683‑0570</strong></p>
   <p>Email: <strong>boardwalkclay1@gmail.com</strong></p>
+  <p><a href="/privacy.html">Privacy Policy</a> • <a href="/terms.html">Terms of Service</a></p>
   <p>© 2026 Quick Response Property Services</p>
 </footer>
 
