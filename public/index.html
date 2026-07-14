@@ -4,92 +4,58 @@
   <meta charset="UTF-8">
   <title>Quick Response Property Services</title>
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/img/quick-response-logo.png">
 
-  <!-- Social Preview -->
   <meta property="og:title" content="Quick Response Property Services">
-  <meta property="og:description" content="Fast, reliable, and affordable property care — junk removal, pressure washing, and lawn maintenance.">
+  <meta property="og:description" content="Fast, reliable, and affordable junk removal, pressure washing, and lawn care.">
   <meta property="og:image" content="/img/social-preview.jpg">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://quickresponse.pages.dev">
+  <meta property="og:url" content="https://quick-response.pages.dev">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="/css/style.css">
-
-  <!-- JS -->
   <script src="/js/app.js" defer></script>
 </head>
+
 <body>
 
 <header class="site-header">
-  <img src="/img/quick-response-logo.png" class="logo-img" alt="Quick Response Property Services Logo">
-  <nav class="nav">
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+  <img src="/img/quick-response-logo.png" class="logo-img">
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <nav id="mobile-menu" class="nav hidden">
+    <a href="/services.html">Services</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/pricing.html">Pricing</a>
+    <a href="/about.html">About</a>
+    <a href="/service-area.html">Service Area</a>
+    <a href="/reviews.html">Reviews</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
   <h1 class="hero-title">Quick Response Property Services</h1>
   <p class="hero-subtitle">Fast • Reliable • Affordable</p>
-  <a href="#contact" class="btn">Request a Quote</a>
+  <a href="/contact.html" class="btn">Request a Quote</a>
 </section>
 
-<section id="services">
+<section>
   <h2>Our Services</h2>
   <div class="service-grid">
-    <div class="service-card">
-      <h3>Junk Removal</h3>
-      <p>We haul away unwanted items quickly and responsibly, leaving your property spotless.</p>
-    </div>
-    <div class="service-card">
-      <h3>Pressure Washing</h3>
-      <p>Restore your home’s curb appeal with professional pressure washing for driveways, decks, and siding.</p>
-    </div>
-    <div class="service-card">
-      <h3>Lawn Care</h3>
-      <p>Keep your yard looking sharp with mowing, trimming, and seasonal maintenance.</p>
-    </div>
+    <div class="service-card"><h3>Junk Removal</h3></div>
+    <div class="service-card"><h3>Pressure Washing</h3></div>
+    <div class="service-card"><h3>Lawn Care</h3></div>
   </div>
 </section>
 
-<section id="about">
-  <h2>About Us</h2>
-  <p class="about-text">
-    Quick Response Property Services is a family‑run business committed to excellence.
-    We combine speed, reliability, and affordability to deliver top‑tier property care.
-    Whether it’s junk removal, pressure washing, or lawn maintenance, we treat every job like it’s our own home.
-  </p>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <form id="contact-form" method="POST" action="/api/job" enctype="multipart/form-data">
-    <input name="name" placeholder="Your name" required>
-    <input name="email" type="email" placeholder="Your email" required>
-    <input name="phone" placeholder="Your phone">
-    <select name="service_type" required>
-      <option value="">Select service</option>
-      <option value="junk">Junk Removal</option>
-      <option value="pressure">Pressure Washing</option>
-      <option value="lawn">Lawn Care</option>
-    </select>
-    <textarea name="description" placeholder="Describe your job"></textarea>
-    <label>Upload Photos (optional)</label>
-    <input type="file" name="photo1" accept="image/*">
-    <input type="file" name="photo2" accept="image/*">
-    <input type="file" name="photo3" accept="image/*">
-    <button class="btn" type="submit">Submit Request</button>
-  </form>
-</section>
+<a href="/contact.html" class="floating-contact">Contact</a>
 
 <footer>
-  <p>© 2026 Quick Response Property Services. All Rights Reserved.</p>
+  <p>Call Us: <strong>(678) 683‑0570</strong></p>
+  <p>Email: <strong>boardwalkclay1@gmail.com</strong></p>
+  <p><a href="/privacy.html">Privacy Policy</a> • <a href="/terms.html">Terms of Service</a></p>
+  <p>© 2026 Quick Response Property Services</p>
 </footer>
 
 </body>
