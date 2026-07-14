@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us – Quick Response Property Services</title>
+
+  <link rel="icon" type="image/png" href="/img/quick-response-logo.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/app.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <img src="/img/quick-response-logo.png" class="logo-img">
+  <nav class="nav">
+    <a href="/">Home</a>
+    <a href="/services.html">Services</a>
+    <a href="/contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1 class="hero-title">Contact Us</h1>
+  <p class="hero-subtitle">Fast Response Guaranteed</p>
+</section>
+
+<section>
+  <form id="contact-form" method="POST" action="/api/job" enctype="multipart/form-data">
+    <input name="name" placeholder="Your name" required>
+    <input name="email" type="email" placeholder="Your email" required>
+    <input name="phone" placeholder="Your phone">
+
+    <select name="service_type" required>
+      <option value="">Select service</option>
+      <option value="junk">Junk Removal</option>
+      <option value="pressure">Pressure Washing</option>
+      <option value="lawn">Lawn Care</option>
+    </select>
+
+    <textarea name="description" placeholder="Describe your job"></textarea>
+
+    <label>Upload Photos (optional)</label>
+    <input type="file" name="photo1" accept="image/*">
+    <input type="file" name="photo2" accept="image/*">
+    <input type="file" name="photo3" accept="image/*">
+
+    <button class="btn" type="submit">Submit Request</button>
+  </form>
+</section>
+
+<footer>
+  <p>Call Us: <strong>(678) 683‑0570</strong></p>
+  <p>Email: <strong>boardwalkclay1@gmail.com</strong></p>
+  <p>© 2026 Quick Response Property Services</p>
+</footer>
+
+</body>
+</html>
