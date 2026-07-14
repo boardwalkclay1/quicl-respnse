@@ -4,23 +4,94 @@
   <meta charset="UTF-8">
   <title>Privacy Policy – Quick Response Property Services</title>
 
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/img/quick-response-logo.png">
+
+  <!-- Social Preview -->
   <meta property="og:title" content="Privacy Policy – Quick Response Property Services">
   <meta property="og:description" content="Learn how we protect your data.">
   <meta property="og:image" content="/img/social-preview.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://quick-response.pages.dev/privacy.html">
 
+  <!-- Styles -->
   <link rel="stylesheet" href="/css/style.css">
+
+  <!-- JS -->
   <script src="/js/app.js" defer></script>
+
+  <!-- Background Slideshow -->
+  <style>
+    body {
+      background: black;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .bg-slideshow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .bg-slideshow img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      animation: fadeBG 36s infinite;
+    }
+
+    .bg-slideshow img:nth-child(1) { animation-delay: 0s; }
+    .bg-slideshow img:nth-child(2) { animation-delay: 6s; }
+    .bg-slideshow img:nth-child(3) { animation-delay: 12s; }
+    .bg-slideshow img:nth-child(4) { animation-delay: 18s; }
+    .bg-slideshow img:nth-child(5) { animation-delay: 24s; }
+    .bg-slideshow img:nth-child(6) { animation-delay: 30s; }
+
+    @keyframes fadeBG {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      40% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+  </style>
 </head>
 
 <body>
 
+<!-- BACKGROUND FADE-IN/OUT SEQUENCE -->
+<div class="bg-slideshow">
+  <img src="/img/b&a.jpg">
+  <img src="/img/b&a-2.jpg">
+  <img src="/img/bunch-b&a.jpg">
+  <img src="/img/full-load.jpg">
+  <img src="/img/trash-limbs.jpg">
+  <img src="/img/load.jpg">
+</div>
+
+<!-- HEADER -->
 <header class="site-header">
   <img src="/img/quick-response-logo.png" class="logo-img">
+
   <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
   <nav id="mobile-menu" class="nav hidden">
     <a href="/">Home</a>
     <a href="/services.html">Services</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/pricing.html">Pricing</a>
+    <a href="/about.html">About</a>
+    <a href="/service-area.html">Service Area</a>
+    <a href="/reviews.html">Reviews</a>
+    <a href="/blog.html">Blog</a>
     <a href="/contact.html">Contact</a>
   </nav>
 </header>
@@ -31,17 +102,38 @@
 
 <section>
   <h2>Your Privacy</h2>
-  <p>We collect your name, email, phone, job details, and photos to provide service.</p>
+  <p>We collect your name, email, phone number, job details, and photos to provide service.</p>
   <p>Your data is stored securely in Cloudflare D1.</p>
   <p>We never sell or share your information.</p>
+  <p>You may request deletion or correction of your data at any time.</p>
 </section>
 
+<!-- FLOATING CONTACT BUTTON -->
 <a href="/contact.html" class="floating-contact">Contact</a>
 
+<!-- FOOTER -->
 <footer>
-  <p>Call Us: <strong>(678) 683‑0570</strong></p>
-  <p>Email: <strong>boardwalkclay1@gmail.com</strong></p>
-  <p><a href="/privacy.html">Privacy Policy</a> • <a href="/terms.html">Terms of Service</a></p>
+  <p>
+    Call Us: 
+    <strong>
+      <a href="tel:8102213556" style="color:inherit;">(810) 221‑3556</a>
+    </strong>
+  </p>
+
+  <p>
+    Email: 
+    <strong>
+      <a href="mailto:Troylyle2024@yahoo.com" style="color:inherit;">
+        Troylyle2024@yahoo.com
+      </a>
+    </strong>
+  </p>
+
+  <p>
+    <a href="/privacy.html">Privacy Policy</a> • 
+    <a href="/terms.html">Terms of Service</a>
+  </p>
+
   <p>© 2026 Quick Response Property Services</p>
 </footer>
 
