@@ -61,20 +61,26 @@
       100% { opacity: 0; }
     }
 
-    /* Make content transparent so background is visible */
+    /* Transparent content blocks */
     section {
-      background: rgba(0,0,0,0.45);
+      background: rgba(0,0,0,0.35);
       border: 1px solid rgba(255,255,255,0.15);
-      padding: 40px;
-      margin: 40px auto;
+      padding: 30px;
+      margin: 30px auto;
       border-radius: 14px;
       max-width: 1100px;
       color: #f5d98c;
     }
 
+    /* Narrow title blocks */
+    h1.hero-title,
     h2 {
-      color: #ffd35a;
-      text-shadow: 0 0 10px rgba(255,150,0,0.5);
+      display: inline;
+      background: #ffcc00;
+      color: #000;
+      padding: 0 6px;
+      font-weight: 700;
+      border-radius: 4px;
     }
 
     .before-after-grid {
@@ -112,10 +118,10 @@
   <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
   <nav id="mobile-menu" class="nav hidden">
-    <a href="index.html">Home</a>
-    <a href="pages/services.html">Services</a>
-    <a href="pages/gallery.html">Gallery</a>
-    <a href="pages/contact.html">Contact</a>
+    <a href="/index.html">Home</a>
+    <a href="/pages/services.html">Services</a>
+    <a href="/pages/gallery.html">Gallery</a>
+    <a href="/pages/contact.html">Contact</a>
   </nav>
 </header>
 
@@ -123,32 +129,41 @@
   <h1 class="hero-title">Before & After Gallery</h1>
 </section>
 
+<!-- JUNK REMOVAL -->
 <section>
   <h2>Junk Removal</h2>
   <div class="before-after-grid">
     <img src="/img/before1.jpg" class="ba-img">
     <img src="/img/after1.jpg" class="ba-img">
+    <img src="/img/bunch-b&a.jpg" class="ba-img">
+    <img src="/img/full-load.jpg" class="ba-img">
   </div>
 </section>
 
+<!-- PRESSURE WASHING -->
 <section>
   <h2>Pressure Washing</h2>
   <div class="before-after-grid">
     <img src="/img/before3.jpg" class="ba-img">
     <img src="/img/after3.jpg" class="ba-img">
+    <img src="/img/trash-limbs.jpg" class="ba-img">
+    <img src="/img/load.jpg" class="ba-img">
   </div>
 </section>
 
+<!-- LAWN CARE -->
 <section>
   <h2>Lawn Care</h2>
   <div class="before-after-grid">
     <img src="/img/before5.jpg" class="ba-img">
     <img src="/img/after5.jpg" class="ba-img">
+    <img src="/img/trailer-load.jpg" class="ba-img">
+    <img src="/img/b&a-2.jpg" class="ba-img">
   </div>
 </section>
 
 <!-- FLOATING CONTACT BUTTON -->
-<a href="pages/contact.html" class="floating-contact">Contact</a>
+<a href="/pages/contact.html" class="floating-contact">Contact</a>
 
 <!-- FOOTER -->
 <footer>
@@ -163,8 +178,8 @@
   </p>
 
   <p>
-    <a href="pages/privacy.html">Privacy Policy</a> •
-    <a href="pages/terms.html">Terms of Service</a>
+    <a href="/pages/privacy.html">Privacy Policy</a> •
+    <a href="/pages/terms.html">Terms of Service</a>
   </p>
 
   <p>© 2026 Quick Response Property Services</p>
