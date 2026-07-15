@@ -1,0 +1,28 @@
+{
+  "name": "Quick Response Property Services",
+  "short_name": "Quick Response",
+  "description": "Fast, reliable, and affordable junk removal, pressure washing, and lawn care.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ffcc00",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/img/quick-response-logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/img/quick-response-logo.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/quick-response-logo.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}
