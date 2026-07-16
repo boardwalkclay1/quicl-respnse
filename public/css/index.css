@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quick Response Property Services</title>
+
+  <link rel="icon" type="image/png" href="/img/quick-response-logo.jpg">
+
+  <meta property="og:title" content="Quick Response Property Services">
+  <meta property="og:description" content="Fast, reliable, and affordable junk removal, pressure washing, and lawn care.">
+  <meta property="og:image" content="/img/social-preview.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://quick-response.pages.dev">
+
+  <!-- CSS FILE -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- JS FILE -->
+  <script src="/js/index.js" defer></script>
+</head>
+
+<body>
+
+<!-- BACKGROUND SLIDESHOW -->
+<div class="bg-slideshow">
+  <img src="/img/b&a.jpg">
+  <img src="/img/b&a-2.jpg">
+  <img src="/img/bunch-b&a.jpg">
+  <img src="/img/full-load.jpg">
+  <img src="/img/trash-limbs.jpg">
+  <img src="/img/load.jpg">
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <img src="/img/quick-response-logo.jpg" class="logo-img" alt="Quick Response Logo">
+
+  <button class="menu-btn">☰</button>
+
+  <nav id="mobile-menu" class="nav hidden">
+    <a href="/pages/services.html">Services</a>
+    <a href="/pages/gallery.html">Gallery</a>
+    <a href="/pages/faq.html">FAQ</a>
+    <a href="/pages/pricing.html">Pricing</a>
+    <a href="/pages/about.html">About</a>
+    <a href="/pages/service-area.html">Service Area</a>
+    <a href="/pages/reviews.html">Reviews</a>
+    <a href="/pages/blog.html">Blog</a>
+    <a href="/pages/contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1 class="hero-title">Quick Response Property Services</h1>
+  <p class="hero-subtitle">Fast • Reliable • Affordable</p>
+  <a href="/pages/contact.html" class="btn">Request a Quote</a>
+</section>
+
+<!-- SERVICES -->
+<section class="services-section">
+  <h2>Our Services</h2>
+
+  <div class="service-grid">
+    <div class="service-card"><h3>Junk Removal</h3></div>
+    <div class="service-card"><h3>Pressure Washing</h3></div>
+    <div class="service-card"><h3>Lawn Care</h3></div>
+  </div>
+</section>
+
+<!-- OWNER SECTION -->
+<section class="owner-section">
+  <div class="owner-photo-wrapper">
+    <img src="/img/troysaw.jpg" alt="Owner Troy" class="owner-photo">
+  </div>
+
+  <div class="owner-text">
+    <h2 class="owner-name">Troy – Owner & Operator</h2>
+    <p>
+      With over <strong>20 years of experience</strong> in property services, Troy has built a reputation for reliability, professionalism, and unmatched work ethic.
+      <br><br>
+      As a <strong>fully insured</strong> operator, he provides peace of mind with every job — whether it’s junk removal, pressure washing, or lawn care.
+      <br><br>
+      Troy believes in fast response times, honest pricing, and delivering results that exceed expectations. Quick Response Property Services is built on trust, quality, and dedication to serving the community.
+    </p>
+  </div>
+</section>
+
+<!-- GALLERY PREVIEW -->
+<section class="gallery-section">
+  <h2>Gallery Preview</h2>
+
+  <div class="gallery-grid">
+    <img src="/img/b&a.jpg">
+    <img src="/img/b&a-2.jpg">
+    <img src="/img/bunch-b&a.jpg">
+    <img src="/img/full-load.jpg">
+    <img src="/img/trash-limbs.jpg">
+    <img src="/img/load.jpg">
+  </div>
+
+  <a href="/pages/gallery.html" class="view-gallery-btn">View Full Gallery</a>
+</section>
+
+<!-- FLOATING CONTACT BUTTON -->
+<a href="/pages/contact.html" class="floating-contact">Contact</a>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    Call Us:
+    <strong><a href="tel:8102213556">(810) 221‑3556</a></strong>
+  </p>
+
+  <p>
+    Email:
+    <strong><a href="mailto:Troylyle2024@yahoo.com">Troylyle2024@yahoo.com</a></strong>
+  </p>
+
+  <p>
+    <a href="/pages/privacy.html">Privacy Policy</a> •
+    <a href="/pages/terms.html">Terms of Service</a>
+  </p>
+
+  <p>© 2026 Quick Response Property Services</p>
+</footer>
+
+</body>
+</html>
