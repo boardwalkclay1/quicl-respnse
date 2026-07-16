@@ -4,161 +4,21 @@
   <meta charset="UTF-8">
   <title>Quick Response Property Services</title>
 
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="/img/quick-response-logo.jpg">
 
-  <!-- Social Preview -->
   <meta property="og:title" content="Quick Response Property Services">
   <meta property="og:description" content="Fast, reliable, and affordable junk removal, pressure washing, and lawn care.">
   <meta property="og:image" content="/img/social-preview.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://quick-response.pages.dev">
 
-  <!-- Styles -->
   <link rel="stylesheet" href="/css/style.css">
-
-  <!-- JS -->
-  <script src="/js/app.js" defer></script>
-
-  <!-- Background Slideshow -->
-  <style>
-    body {
-      background: black;
-      position: relative;
-      overflow-x: hidden;
-    }
-
-    .bg-slideshow {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      overflow: hidden;
-    }
-
-    .bg-slideshow img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0;
-      animation: fadeBG 36s infinite;
-    }
-
-    .bg-slideshow img:nth-child(1) { animation-delay: 0s; }
-    .bg-slideshow img:nth-child(2) { animation-delay: 6s; }
-    .bg-slideshow img:nth-child(3) { animation-delay: 12s; }
-    .bg-slideshow img:nth-child(4) { animation-delay: 18s; }
-    .bg-slideshow img:nth-child(5) { animation-delay: 24s; }
-    .bg-slideshow img:nth-child(6) { animation-delay: 30s; }
-
-    @keyframes fadeBG {
-      0% { opacity: 0; }
-      10% { opacity: 1; }
-      30% { opacity: 1; }
-      40% { opacity: 0; }
-      100% { opacity: 0; }
-    }
-
-    /* Transparent, small blocks */
-    section {
-      background: rgba(0,0,0,0.30);
-      border: 1px solid rgba(255,255,255,0.15);
-      padding: 25px;
-      margin: 25px auto;
-      border-radius: 12px;
-      max-width: 1100px;
-      color: #f5d98c;
-    }
-
-    .hero {
-      background: rgba(0,0,0,0.20);
-      padding: 100px 20px;
-      text-align: center;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-
-    h2 {
-      display: inline;
-      background: #ffcc00;
-      color: #000;
-      padding: 0 6px;
-      font-weight: 700;
-      border-radius: 4px;
-    }
-
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .service-card {
-      background: rgba(0,0,0,0.45);
-      padding: 20px;
-      border-radius: 10px;
-      border: 1px solid rgba(255,255,255,0.2);
-      text-align: center;
-      color: #ffd35a;
-    }
-
-    /* Owner section */
-    .owner-section {
-      text-align: center;
-    }
-
-    .owner-photo {
-      width: 260px;
-      border-radius: 12px;
-      border: 2px solid rgba(255,255,255,0.25);
-      box-shadow: 0 0 12px rgba(255,150,0,0.4);
-      margin-top: 15px;
-    }
-
-    .owner-name {
-      display: inline-block;
-      background: #ffcc00;
-      color: #000;
-      padding: 0 6px;
-      margin-top: 12px;
-      font-weight: 700;
-      border-radius: 4px;
-    }
-
-    /* Gallery preview */
-    .gallery-preview {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .gallery-preview img {
-      width: 100%;
-      border-radius: 10px;
-      border: 2px solid rgba(255,255,255,0.25);
-      box-shadow: 0 0 10px rgba(255,150,0,0.4);
-    }
-
-    .view-gallery-btn {
-      display: inline-block;
-      margin-top: 20px;
-      background: #ffcc00;
-      color: #000;
-      padding: 10px 22px;
-      border-radius: 6px;
-      font-weight: 700;
-      text-decoration: none;
-    }
-  </style>
+  <script src="/js/index.js" defer></script>
 </head>
 
 <body>
 
-<!-- BACKGROUND FADE-IN/OUT SEQUENCE -->
+<!-- BACKGROUND SLIDESHOW -->
 <div class="bg-slideshow">
   <img src="/img/b&a.jpg">
   <img src="/img/b&a-2.jpg">
@@ -172,7 +32,7 @@
 <header class="site-header">
   <img src="/img/quick-response-logo.jpg" class="logo-img" alt="Quick Response Logo">
 
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <button class="menu-btn">☰</button>
 
   <nav id="mobile-menu" class="nav hidden">
     <a href="/pages/services.html">Services</a>
@@ -194,8 +54,8 @@
   <a href="/pages/contact.html" class="btn">Request a Quote</a>
 </section>
 
-<!-- SERVICES PREVIEW -->
-<section>
+<!-- SERVICES -->
+<section class="services-section">
   <h2>Our Services</h2>
 
   <div class="service-grid">
@@ -207,18 +67,27 @@
 
 <!-- OWNER SECTION -->
 <section class="owner-section">
-  <h2>Meet the Owner</h2>
+  <div class="owner-photo-wrapper">
+    <img src="/img/troysaw.jpg" alt="Owner Troy" class="owner-photo">
+  </div>
 
-  <img src="/img/troysaw.jpg" alt="Owner Troy" class="owner-photo">
-
-  <div class="owner-name">Troy – Owner & Operator</div>
+  <div class="owner-text">
+    <h2 class="owner-name">Troy – Owner & Operator</h2>
+    <p>
+      With over <strong>20 years of experience</strong> in property services, Troy has built a reputation for reliability, professionalism, and unmatched work ethic.  
+      As a fully insured operator, he provides peace of mind with every job — whether it’s junk removal, pressure washing, or lawn care.  
+      <br><br>
+      Troy believes in fast response times, honest pricing, and delivering results that exceed expectations.  
+      Quick Response Property Services is built on trust, quality, and dedication to serving the community.
+    </p>
+  </div>
 </section>
 
-<!-- GALLERY PREVIEW SECTION -->
-<section>
+<!-- GALLERY PREVIEW -->
+<section class="gallery-section">
   <h2>Gallery Preview</h2>
 
-  <div class="gallery-preview">
+  <div class="gallery-grid">
     <img src="/img/b&a.jpg">
     <img src="/img/b&a-2.jpg">
     <img src="/img/bunch-b&a.jpg">
@@ -237,12 +106,12 @@
 <footer>
   <p>
     Call Us:
-    <strong><a href="tel:8102213556" style="color:inherit;">(810) 221‑3556</a></strong>
+    <strong><a href="tel:8102213556">(810) 221‑3556</a></strong>
   </p>
 
   <p>
     Email:
-    <strong><a href="mailto:Troylyle2024@yahoo.com" style="color:inherit;">Troylyle2024@yahoo.com</a></strong>
+    <strong><a href="mailto:Troylyle2024@yahoo.com">Troylyle2024@yahoo.com</a></strong>
   </p>
 
   <p>
